@@ -1,8 +1,14 @@
 # Assignment-1 (B)
+# Importing libraries
 import csv
+
+# Taking id no. as input 
 id=input("Enter id to search: ")
+
+# Reading the users.csv file
 file=csv.reader(open("users.csv","r"),delimiter=',')
 
+# Searching id no. in the file
 for i in file:
   if i[0]==id:
     print("Id: ",i[0])
